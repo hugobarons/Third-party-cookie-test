@@ -68,7 +68,9 @@ async function runFirstPartyServerCookieTest() {
             method: "GET",
             credentials: "same-origin"
         });
-        const setData = await setResponse.json();
+        const setText = await setResponse.text();
+        console.log("set-first-cookie raw response:", setText);
+        const setData = JSON.parse(setText);
 
         const showResponse = await fetch("/api/show-first-cookie", {
             method: "GET",
