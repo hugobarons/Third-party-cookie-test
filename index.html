@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="lv">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pārlūka izsekošanas testi</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main class="container">
+<h1>Pārlūka izsekošanas testi</h1>
+<p class="subtitle">
+    Izmantojiet pogas zemāk, lai palaistu katru testu.
+</p>
+
+<section class="card">
+    <h2>Pieejamie testi</h2>
+
+    <div class="button-group">
+        <button id="firstPartyBtn">Pirmās puses tests (document.cookie)</button>
+        <button id="firstPartyServerBtn">Pirmās puses tests (Set-Cookie)</button>
+        <button id="thirdPartyBtn">Trešās puses tests (document.cookie iframe)</button>
+        <button id="thirdPartyServerBtn">Trešās puses tests (Set-Cookie iframe)</button>
+        <button id="queryParamBtn">Vaicājuma parametru tests</button>
+        <button id="localStorageBtn">localStorage tests</button>
+        <button id="clearBtn" class="secondary">Notīrīt testa datus</button>
+    </div>
+</section>
+
+<section class="card">
+    <h2>Rezultāts</h2>
+    <div id="result" class="result-box">Testi vēl nav palaisti.</div>
+</section>
+
+<section class="card">
+    <h2>Trešās puses iframe vieta</h2>
+    <p class="helper-text">Šeit ielādēsies Domain2 iframe trešās puses scenārijiem.</p>
+    <div id="iframeContainer" class="iframe-container"></div>
+</section>
+
+<section class="card">
+    <h2>Šī brīža pārlūka dati</h2>
+    <ul class="data-list">
+        <li><strong>document.cookie:</strong> <span id="cookieValue">-</span></li>
+        <li><strong>localStorage:</strong> <span id="localStorageValue">-</span></li>
+        <li><strong>URL query string:</strong> <span id="queryValue">-</span></li>
+    </ul>
+</section>
+</main>
+
+<script src="script.js"></script>
+</body>
+</html>
