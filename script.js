@@ -6,7 +6,7 @@ const iframeContainer = document.getElementById("iframeContainer");
 
 const TEST_LOCALSTORAGE_KEY = "domain1_localstorage_test";
 const TEST_QUERY_PARAM = "test_id";
-const DOMAIN2_ORIGIN = "https://https://hugo-domain-test.site/";
+const DOMAIN2_ORIGIN = "https://hugo-domain-test.site/";
 
 const firstPartyBtn = document.getElementById("firstPartyBtn");
 const firstPartyServerBtn = document.getElementById("firstPartyServerBtn");
